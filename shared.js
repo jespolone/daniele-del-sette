@@ -75,3 +75,24 @@ if (lightbox) {
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 }
+
+/* ─── HAMBURGER MENU ─── */
+const hamburger  = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  // Chiudi cliccando un link
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+}
