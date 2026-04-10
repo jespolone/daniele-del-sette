@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniele Del Sette — Artista</title>
+  <link rel="stylesheet" href="shared.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <nav id="nav">
+    <a class="nav-logo" href="index.html"><img class="nav-logo-img" src="media/images/logo.JPG" alt="D.D. Art"></a>
     <a class="nav-logo" href="index.html">Daniele Del Sette</a>
     <ul class="nav-links">
-      <li><a href="opere.html">Opere</a></li>
-      <li><a href="chi-sono.html">Chi sono</a></li>
-      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="opere/index.html">Opere</a></li>
+      <li><a href="chi-sono/index.html">Chi sono</a></li>
+      <li><a href="contatti/index.html">Contatti</a></li>
     </ul>
   </nav>
 
@@ -39,54 +40,55 @@
       <h2 class="section-title">Opere Recenti</h2>
     </div>
 
-    <div class="gallery-grid" id="home-gallery">
-      <!-- Aggiungi qui le tue immagini in evidenza (consigliato: 6) -->
-      <!-- Esempio:
-      <div class="gallery-item" data-title="Senza Titolo I" data-meta="Olio su tela · 80×100 cm · 2024">
-        <img src="immagini/opera-01.jpg" alt="Senza Titolo I">
-        <div class="gallery-item-overlay">
-          <p class="gallery-item-title">Senza Titolo I</p>
-          <p class="gallery-item-meta">Olio su tela · 80×100 cm · 2024</p>
+    <div class="gallery-grid">
+      <!--
+        Per aggiungere un'opera copia questo blocco e cambia src, data-title, data-meta:
+
+        <div class="gallery-item" data-title="TITOLO" data-meta="TECNICA · DIMENSIONI · ANNO">
+          <img src="../../immagini/NOMEFILE.jpg" alt="TITOLO">
+          <div class="gallery-item-overlay">
+            <p class="gallery-item-title">TITOLO</p>
+            <p class="gallery-item-meta">TECNICA · DIMENSIONI · ANNO</p>
+          </div>
         </div>
-      </div>
       -->
       <div class="gallery-item" data-title="Senza Titolo I" data-meta="Olio su tela · 80×100 cm · 2024">
-        <img src="immagini/opera-01.jpg" alt="Opera 1">
+        <img src="media\murales\AIYU5940.JPG" alt="Senza Titolo I">
         <div class="gallery-item-overlay">
           <p class="gallery-item-title">Senza Titolo I</p>
           <p class="gallery-item-meta">Olio su tela · 80×100 cm · 2024</p>
         </div>
       </div>
       <div class="gallery-item" data-title="Frammento II" data-meta="Acrilico · 60×80 cm · 2024">
-        <img src="immagini/opera-02.jpg" alt="Opera 2">
+        <img src="media\murales\AJBY8580.JPG" alt="Frammento II">
         <div class="gallery-item-overlay">
           <p class="gallery-item-title">Frammento II</p>
           <p class="gallery-item-meta">Acrilico · 60×80 cm · 2024</p>
         </div>
       </div>
       <div class="gallery-item" data-title="Luce Diffusa" data-meta="Tecnica mista · 100×120 cm · 2023">
-        <img src="immagini/opera-03.jpg" alt="Opera 3">
+        <img src="media\murales\CYNU6955.JPG" alt="Luce Diffusa">
         <div class="gallery-item-overlay">
           <p class="gallery-item-title">Luce Diffusa</p>
           <p class="gallery-item-meta">Tecnica mista · 100×120 cm · 2023</p>
         </div>
       </div>
       <div class="gallery-item" data-title="Confine" data-meta="Olio su tavola · 40×50 cm · 2023">
-        <img src="immagini/opera-04.jpg" alt="Opera 4">
+        <img src="media\murales\DBCJ7518.JPG" alt="Confine">
         <div class="gallery-item-overlay">
           <p class="gallery-item-title">Confine</p>
           <p class="gallery-item-meta">Olio su tavola · 40×50 cm · 2023</p>
         </div>
       </div>
       <div class="gallery-item" data-title="Presenza III" data-meta="Acrilico su tela · 70×90 cm · 2023">
-        <img src="immagini/opera-05.jpg" alt="Opera 5">
+        <img src="media\murales\EYPV0818.JPG" alt="Presenza III">
         <div class="gallery-item-overlay">
           <p class="gallery-item-title">Presenza III</p>
           <p class="gallery-item-meta">Acrilico su tela · 70×90 cm · 2023</p>
         </div>
       </div>
       <div class="gallery-item" data-title="Soglia" data-meta="Olio su tela · 90×110 cm · 2022">
-        <img src="immagini/opera-06.jpg" alt="Opera 6">
+        <img src="media\murales\GKXH8331.JPG" alt="Soglia">
         <div class="gallery-item-overlay">
           <p class="gallery-item-title">Soglia</p>
           <p class="gallery-item-meta">Olio su tela · 90×110 cm · 2022</p>
@@ -94,8 +96,8 @@
       </div>
     </div>
 
-    <div style="text-align:center; margin-top: 48px;" class="reveal">
-      <a href="opere.html" class="contact-link" style="display:inline-flex; gap:16px; justify-content:center;">
+    <div class="gallery-cta reveal">
+      <a href="opere/index.html" class="contact-link gallery-cta-link">
         Vedi tutte le opere <span class="arrow">→</span>
       </a>
     </div>
@@ -116,6 +118,7 @@
     <span>Roma, Italia</span>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="shared.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

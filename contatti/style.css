@@ -1,0 +1,23 @@
+/* ─── PAGINA CONTATTI ─── */
+.page-section {
+  padding-top: 140px;
+}
+
+.contact-inner {
+  max-width: 560px;
+}
+
+.contact-intro {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 48px;
+}
+
+.contact-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.9;
+}
